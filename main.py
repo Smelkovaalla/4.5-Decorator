@@ -15,6 +15,7 @@ def parametrized_decor(parameter):
         print(f'Именованные аргументы kwargs - {kwargs}')
       print("____" * 10)
       result = f'Итоговое значение {foo(*args, **kwargs)}'
+	f.write(f'Путь к файлу с логами {parameter}\n')
       return result
     return new_foo
   return decor
